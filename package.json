@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prod": "vite build --base '/strapi-presentation/' && rm -rf docs && mv dist docs"
   },
   "devDependencies": {
     "reveal.js": "^4.3.0",
